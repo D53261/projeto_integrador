@@ -150,11 +150,7 @@ public class Login extends javax.swing.JFrame {
     ConfirmaDAO confirmaDAO = new ConfirmaDAO();
     
     // Autentica o usuário e obtém a pontuação
-    int pontos = confirmaDAO.autenticar(confirma);
-    
-    Pg1 pg1 = new Pg1(email);
-    pg1.setVisible(true);
-    dispose();
+    int pontos = confirmaDAO.autenticar(confirma, email);
     }//GEN-LAST:event_btnregistrarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

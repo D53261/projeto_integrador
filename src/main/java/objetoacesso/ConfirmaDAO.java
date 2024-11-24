@@ -37,7 +37,7 @@ public class ConfirmaDAO {
             System.out.println("Erro ao inserir usuário: " + e.getMessage());
         }
         
-    } public int autenticar(Confirma confirma) {
+    } public int autenticar(Confirma confirma, String email) {
         int pontos = 0;
         String sql = "SELECT pontos FROM registros WHERE email = ? AND senha = ?";
         try (Connection conn = conexao.getConexao();
@@ -47,7 +47,9 @@ public class ConfirmaDAO {
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 pontos = rs.getInt("pontos");
-                
+                Pg1 pg1 = new Pg1(email);
+                pg1.setVisible(true);
+                pg1.dispose();
             } else {
                 JOptionPane.showMessageDialog(null, "Email ou senha incorretos.", "Erro", JOptionPane.ERROR_MESSAGE);
             }

@@ -8,5 +8,5 @@ Aqui estão os códigos referentes ao projeto realizado com apoio dos profission
 * Figma
 ## Feito por:
 ### Danilo Ribeiro
-### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-catroli-da-silva/
 ### Email: danilo051007@gmail.com
